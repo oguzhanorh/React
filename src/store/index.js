@@ -19,15 +19,17 @@ const store = configureStore({
   },
 });
 
-console.log(songsSlice.actions.addSong('some song')); //slice + actions + type
+export { store };
 
-const startingState = store.getState();
-console.log(JSON.stringify(startingState));
+// console.log(songsSlice.actions.addSong('some song')); //slice + actions + type
 
-store.dispatch(songsSlice.actions.addSong('Some Song!'));
+// const startingState = store.getState();
+// console.log(JSON.stringify(startingState));
 
-const finalState = store.getState();
-console.log(JSON.stringify(finalState));
+// store.dispatch(songsSlice.actions.addSong('Some Song!'));
+
+// const finalState = store.getState();
+// console.log(JSON.stringify(finalState));
 
 // store.dispatch({
 //   type: 'song/removeSong',
